@@ -18,10 +18,10 @@ describe "ArrayUtil" do
     end
 
     it "should return true for an array that has the element in it" do
-      expect(ArrayUtil.bsearch([2, 5, 8, 10], 5)).to eq(true)
-      expect(ArrayUtil.bsearch([-10, 3, 8, 19], 5)).to eq(false)
-      expect(ArrayUtil.bsearch([2, 3, 5, 8, 10], 5)).to eq(true)
-      expect(ArrayUtil.bsearch([-10, 0, 3, 8, 19], 5)).to eq(false)
+      expect(ArrayUtil.bsearch([2, 5, 8, 10, 11, 12, 13], 5)).to eq(true)
+      expect(ArrayUtil.bsearch([-10, 3, 8, 19, 20, 21, 22], 23)).to eq(false)
+      expect(ArrayUtil.bsearch([2, 3, 5, 8, 10, 11, 12, 13], 13)).to eq(true)
+      expect(ArrayUtil.bsearch([-10, 0, 3, 8, 19, 20, 21, 22], 5)).to eq(false)
     end
   end
 end
